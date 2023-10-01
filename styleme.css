@@ -1,9 +1,8 @@
 * {
     padding: 0%;
     margin: 0%;
-    background-color: aqua;
+    background-color: #c7eae4;
 }
-
 #GOMH {
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -14,5 +13,39 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-
+}
+#H1 {
+    background-color: #a7e8bd;
+    height: 40%;
+    width: 100%;
+    border-radius: 4px;
+}
+#NAVBAR {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: #ffd972;
+    height: 100%;
+}
+#INSTAGRAM,#FACEBOOK,#SNAPCHAT {
+    background-color: transparent;
+    margin-right: 1.5%;
+}
+i {
+    background-color: transparent;
+    font-size: 70%;
+}
+a {
+    text-decoration: none;
+    background-color: transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 70%;
+}
+#HOME {
+    background-color: transparent;
+    font-size: 90%;
+    font-family: fantasy;
+    position: absolute;
+    left: 1%;
+    top: 10vh
 }
