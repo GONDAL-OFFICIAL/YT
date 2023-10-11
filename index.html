@@ -91,7 +91,7 @@ i {
     background-color: transparent;
     font-size: 70%;
 }
-a {
+#A1,#A2,#A3 {
     text-decoration: none;
     background-color: transparent;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -103,6 +103,69 @@ a {
     background-color: aliceblue;
     animation: LINKS 1.5s ease-out .2s 1 none;
 
+}
+#INTRO {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    width: 280px;
+    background-color: aliceblue;
+    color: #1a1b24;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    text-align: center;
+    border-radius: 7px;
+    position: relative;
+    left: 2%;
+    overflow: hidden;
+    transition: all ease 1s;
+}
+#INTRO #A4 {
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    background-color: transparent;
+    text-decoration: none;
+    color: #1a1b24;
+    transition: all ease 1s;
+}
+#ITEXT {
+    height: 60%;
+    width: 100%;
+    background: linear-gradient(transparent,salmon);
+    color: darkslategray;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 13px;
+    position: absolute;
+    bottom: -60%;
+    transition: all ease 1s;
+    text-transform: capitalize;
+}
+#INTRO:hover #ITEXT {
+    bottom: 0;
+}
+#INTRO:hover {
+    /* color: aliceblue; */
+    align-items: flex-start;
+}
+a::selection {
+    color: #ff0000;
+    background-color: black;
+}
+#TVIDS {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+#TVID {
+    margin-top: 7%;
+    height: 200px;
+    width: 200px;
+    border-radius: 7px;
 }
 @keyframes LINKS {
     0% {background-image: url(./black.JPG);}
@@ -117,7 +180,7 @@ button {
     position: absolute;
     border: 2px solid black;
     border-radius: 6px;
-    position: absolute;
+    position: fixed;
     bottom: 30px;
     right: 30px;
     transition: all .73s ease;
@@ -144,6 +207,12 @@ button:hover {
 button:active {
     scale: .9;
 }
+@media (orientation: landscape) {
+    #TVIDS {
+             justify-content: left;
+             margin-left: 2%;
+    }
+}    
     </style>
     
 </head>
@@ -154,17 +223,29 @@ button:active {
     <div id="NAVBAR">
         <div id="INSTAGRAM">
             <i class="fa-brands fa-instagram fa-shake" style="color: #ff0000;"></i>
-            <a href="https://www.instagram.com/ali_gondal_307/" target=".main">INSTAGRAM</a>
+            <a id="A1" href="https://www.instagram.com/ali_gondal_307/" target=".main">INSTAGRAM</a>
         </div>
         <div id="FACEBOOK">
             <i class="fa-brands fa-facebook fa-shake" style="color: #0000ff;"></i>
-            <a href="" target=".main">FACEBOOK</a>
+            <a id="A2" href="" target=".main">FACEBOOK</a>
         </div>
         <div id="SNAPCHAT">
             <i class="fa-brands fa-snapchat fa-shake" style="color: #8B8000;"></i>
-            <a href="https://accounts.snapchat.com/accounts/welcome" target=".main">SNAPCHAT</a>
+            <a id="A3" href="https://accounts.snapchat.com/accounts/welcome" target=".main">SNAPCHAT</a>
         </div>
     </div>
+    <!-- INTRO -->
+    <div id="INTRO">
+        <a id="A4" href="https://youtu.be/odSx04Uzw9o" target=".main"> INTRODUCTION</a>
+        <div id="ITEXT">
+            <!-- Welcome to our tech channel! We are passionate about technology and its impact on our daily lives. Our channel is dedicated to providing you with the latest news, reviews, and insights on the world of technology. From smartphones to laptops, from gaming to AI, we cover it all. Our goal is to help you stay informed and make the best decisions when it comes to technology. So, whether you’re a tech enthusiast or just curious about the latest trends, we’ve got you covered. Join us on this exciting journey and let’s explore the world of technology together! -->
+            Welcome to our tech channel! <br>We are passionate about technology and love to share our knowledge with you.<br>Join us on this exciting journey as we explore the world of technology together.
+        </div>
+    </div>
+    <div id="TVIDS">
+        <a id="TA" href="https://www.youtube.com/@gondalofficial4105/playlists" target=".main"><video id="TVID" src="./TUTORIALS.MP4" autoplay loop muted ></video></a>
+    </div>
+    <div>
     <form action="https://gondal-official.github.io/YT-VIDEOS/">
         <button>YT VIDEOS</button>
     </form>
