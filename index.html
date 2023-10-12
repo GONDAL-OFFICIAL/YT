@@ -9,10 +9,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
-      </style>
-    <!-- STYLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Autour+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Autour+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
     <style>
 * {
     padding: 0%;
@@ -27,6 +42,13 @@
     height: 100%;
 
 } */
+body::-webkit-scrollbar {
+    background-color: transparent;
+}
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(salmon,lightblue,yellow,lightgreen);
+    border-radius: 20px;
+}
 #LOGO {
     padding: 0%;
     margin: 0%;
@@ -40,12 +62,20 @@
     40% {rotate: -30deg;}
     100% {rotate: 360deg;}
 }
+#LOGO:hover {
+    animation: LOGO 1s linear .2s infinite none;
+}
 #GOMH {
     margin: 0%;
     padding: 0%;
     text-align: left;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Autour One'; */
+    font-family: 'Bebas Neue', sans-serif;
+    font-style: bold;
     font-size: 300%;
+    letter-spacing: 10px;
     line-height: 45px;
     background-image: url(./RWBG.JPG);
     background-size: contain;
@@ -59,6 +89,13 @@
     0% {background-image: url(./red.JPG);}
     20% {background-image: url(./white.JPG);}
     100% {background-image: url(./RWBG.JPG);}
+}
+#GOMH:hover {
+    animation: FUNNH1 .7s ease-in-out .2s infinite none;
+}
+@keyframes FUNNH1 {
+    0% {background-image: url(./red.JPG);}
+    100% {background-image: url(./white.JPG);}
 }
 #GOMH::selection {
     background-color: black;
@@ -104,17 +141,22 @@ i {
     animation: LINKS 1.5s ease-out .2s 1 none;
 
 }
+@keyframes LINKS {
+    0% {background-image: url(./black.JPG);}
+    100% {background-image: url(./white.JPG);}
+}
 #INTRO {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 130px;
-    width: 280px;
+    width: 300px;
     background-color: aliceblue;
     color: #1a1b24;
     font-size: 40px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
     /* font-family: Arial, Helvetica, sans-serif; */
+    /* font-family: 'Luckiest Guy', cursive; */
     text-align: center;
     border-radius: 7px;
     position: relative;
@@ -124,8 +166,9 @@ i {
 }
 #INTRO #A4 {
     font-size: 40px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
     /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Londrina Solid', sans-serif;
     background-color: transparent;
     text-decoration: none;
     color: #1a1b24;
@@ -137,6 +180,7 @@ i {
     background: linear-gradient(transparent,salmon);
     color: darkslategray;
     /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Luckiest Guy', cursive;
     font-size: 13px;
     position: absolute;
     bottom: -60%;
@@ -166,10 +210,11 @@ a::selection {
     height: 200px;
     width: 200px;
     border-radius: 7px;
+    transition: all ease .5s;
 }
-@keyframes LINKS {
-    0% {background-image: url(./black.JPG);}
-    100% {background-image: url(./white.JPG);}
+#TVID:hover {
+    scale: .9;
+    opacity: .9;
 }
 button {
     background-color: red;
@@ -207,11 +252,25 @@ button:hover {
 button:active {
     scale: .9;
 }
+@media (min-width: 350px) and (max-width: 450px) {
+  #INTRO {
+    width: 275px;
+  }
+  #GOMH {
+    letter-spacing: 6px;
+  }
+}
 @media (orientation: landscape) {
     #TVIDS {
              justify-content: left;
              margin-left: 2%;
     }
+    #INTRO {
+    width: 290px;
+  }
+  #GOMH {
+    letter-spacing: 9px;
+  }
 }    
     </style>
     
