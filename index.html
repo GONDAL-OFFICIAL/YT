@@ -207,14 +207,17 @@ a::selection {
 }
 #TVID {
     margin-top: 7%;
-    height: 200px;
-    width: 200px;
+    height: 290px;
+    width: 290px;
     border-radius: 7px;
     transition: all ease .5s;
 }
 #TVID:hover {
-    scale: .9;
-    opacity: .9;
+    rotate: 7deg;
+    opacity: .7;
+}
+video {
+    margin: 3px;
 }
 button {
     background-color: red;
@@ -255,9 +258,19 @@ button:active {
 @media (min-width: 350px) and (max-width: 450px) {
   #INTRO {
     width: 275px;
+    margin-left: 2%;
   }
   #GOMH {
     letter-spacing: 6px;
+  }
+  #TVIDS {
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    /* margin-left: 2%; */
+  }
+  #NAVBAR {
+    margin-left: 5.6%;
   }
 }
 @media (orientation: landscape) {
@@ -303,6 +316,8 @@ button:active {
     </div>
     <div id="TVIDS">
         <a id="TA" href="https://www.youtube.com/playlist?list=PLUpa-_BYyyJ9Tzf6s-uxZDJR19_bQUyYU" target=".main"><video id="TVID" src="./TUTORIALS.MP4" autoplay loop muted ></video></a>
+
+        <a id="GA" href="https://www.youtube.com/playlist?list=PLUpa-_BYyyJ_fm-DrYFtJKNLQ-QTtUlF-" target=".main"><video id="TVID" src="./GENINFO.MP4" autoplay loop muted ></video></a>
     </div>
     <div>
     <form action="https://gondal-official.github.io/YT-VIDEOS/">
