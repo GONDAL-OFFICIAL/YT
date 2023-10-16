@@ -1,76 +1,223 @@
-
 * {
     padding: 0%;
     margin: 0%;
-    background-color: whitesmoke;
+    background-color: #1a1b24;
+}
+/* body {
+    background-image: url(./BG2.JPG);
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+    height: 100%;
+
+} */
+body::-webkit-scrollbar {
+    background-color: transparent;
+}
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(salmon,lightblue,yellow,lightgreen);
+    border-radius: 20px;
+}
+#LOGO {
+    padding: 0%;
+    margin: 0%;
+    height: 120px;
+    width: 120px;
+    animation: LOGO 1s linear .2s 1 none;
+}
+@keyframes LOGO {
+    0% {rotate: 0deg;}
+    20% {rotate: 30deg;}
+    40% {rotate: -30deg;}
+    100% {rotate: 360deg;}
+}
+#LOGO:hover {
+    animation: LOGO 1s linear .2s infinite none;
 }
 #GOMH {
-    text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    text-align: left;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Autour One'; */
+    font-family: 'Bebas Neue', sans-serif;
+    font-style: bold;
     font-size: 300%;
-    letter-spacing: .3em;
-    background-image: url(https://th.bing.com/th/id/R.07df778becacbc34c9b243ad94a78f7a?rik=855ffztqF5Sl0Q&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f06%2fBlack-And-Red-Picture-Photo.jpg&ehk=cl%2fzVEh7NnhYQrpa%2bCduInzmAddZTaUn8jdmJuBtnHA%3d&risl=&pid=ImgRaw&r=0);
+    letter-spacing: 10px;
+    line-height: 45px;
+    background-image: url(./RWBG.JPG);
     background-size: contain;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    position: relative;
+    animation: HEAD1 1.5s linear .2s 1 none;
+}
+@keyframes HEAD1 {
+    0% {background-image: url(./red.JPG);}
+    20% {background-image: url(./white.JPG);}
+    100% {background-image: url(./RWBG.JPG);}
+}
+#GOMH:hover {
+    animation: FUNNH1 .7s ease-in-out .2s infinite none;
+}
+@keyframes FUNNH1 {
+    0% {background-image: url(./red.JPG);}
+    100% {background-image: url(./white.JPG);}
 }
 #GOMH::selection {
     background-color: black;
     color: red;
 }
 #H1 {
-    background-color: #a7e8bd;
-    height: 40%;
-    width: 100%;
-    border-radius: 4px;
+    position: absolute;
+    top: 12px;
+    left: 110px;
+    margin: 0%;
+    padding: 1%;
 }
 #NAVBAR {
+    margin: 0%;
+    margin-top: 1%;
+    margin-left: 2.5%;
     display: flex;
-    justify-content: end;
+    justify-content: start;
     align-items: center;
-    background-color: #ffd972;
+    background-color: transparent;
     height: 100%;
     border-radius: 4px;
-    border-bottom: 2px solid darkslategray;
-    border-top: 2px solid darkslategray;
 }
 #INSTAGRAM,#FACEBOOK,#SNAPCHAT {
     background-color: transparent;
+    margin: 0%;
     margin-right: 1.5%;
-}
-#INSTAGRAM,#FACEBOOK,#SNAPCHAT::selection {
-    background-color: black;
-    color: red;
 }
 i {
     background-color: transparent;
     font-size: 70%;
 }
-a {
+#A1,#A2,#A3 {
     text-decoration: none;
     background-color: transparent;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 70%;
+    font-size: 77%;
+    color: whitesmoke;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-color: aliceblue;
+    animation: LINKS 1.5s ease-out .2s 1 none;
+
+}
+@keyframes LINKS {
+    0% {background-image: url(./black.JPG);}
+    100% {background-image: url(./white.JPG);}
+}
+#INTRO {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    width: 300px;
+    background-color: aliceblue;
+    color: #1a1b24;
+    font-size: 40px;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* font-family: 'Luckiest Guy', cursive; */
+    text-align: center;
+    border-radius: 7px;
+    position: relative;
+    left: 2%;
+    overflow: hidden;
+    transition: all ease 1s;
+}
+#INTRO #A4 {
+    font-size: 40px;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Londrina Solid', sans-serif;
+    background-color: transparent;
+    text-decoration: none;
+    color: #1a1b24;
+    transition: all ease 1s;
+}
+#ITEXT {
+    height: 60%;
+    width: 100%;
+    background: linear-gradient(transparent,salmon);
+    color: darkslategray;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 13px;
+    position: absolute;
+    bottom: -60%;
+    transition: all ease 1s;
+    text-transform: capitalize;
+}
+#INTRO:hover #ITEXT {
+    bottom: 0;
+}
+#INTRO:hover {
+    /* color: aliceblue; */
+    align-items: flex-start;
+}
+a::selection {
+    color: #ff0000;
+    background-color: black;
+}
+#TVIDS {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+}
+#TVID {
+    margin-top: 7%;
+    height: 290px;
+    width: 290px;
+    border-radius: 7px;
+    transition: all ease .5s;
+}
+#TVID:hover {
+    scale: 1.03;
+    opacity: .7;
+}
+video {
+    margin: 3px;
 }
 button {
-    background-color: aquamarine;
-    padding: 2%;
-    margin: 2%;
-    height: 10%;
-    width: 20%;
+    background-color: red;
+    padding: 0%;
+    margin: 0%;
+    height: 60px;
+    width: 100px;
     position: absolute;
     border: 2px solid black;
     border-radius: 6px;
-    position: absolute;
-    bottom: 2%;
-    right: 2%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
     transition: all .73s ease;
     font-family: 'Teko', sans-serif;
     font-family: 'Teko', sans-serif;
     font-weight: 700;
-    font-size: 137%;
+    font-size: 90%;
     text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    animation: BBG 1.5s ease-out 1.5s 1 none;
+    animation: BBG2 1.5s ease-out .2s 1 none;
+}
+@keyframes BBG {
+    0% {border-radius: 0px;}
+    100% {border-radius: 6px;}
+}
+@keyframes BBG2 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 button:hover {
     box-shadow: 5px 5px 0px black;
@@ -78,3 +225,33 @@ button:hover {
 button:active {
     scale: .9;
 }
+@media (min-width: 350px) and (max-width: 450px) {
+  #INTRO {
+    width: 275px;
+    margin-left: 2%;
+  }
+  #GOMH {
+    letter-spacing: 6px;
+  }
+  #TVIDS {
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    /* margin-left: 2%; */
+  }
+  #NAVBAR {
+    margin-left: 5.6%;
+  }
+}
+@media (orientation: landscape) {
+    #TVIDS {
+             justify-content: left;
+             margin-left: 2%;
+    }
+    #INTRO {
+    width: 290px;
+  }
+  #GOMH {
+    letter-spacing: 9px;
+  }
+}    
