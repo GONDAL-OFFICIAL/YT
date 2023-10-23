@@ -415,7 +415,7 @@ video {
     margin: 3px;
 }
 
-/* button {
+button {
     background-color: red;
     padding: 0%;
     margin: 0%;
@@ -464,7 +464,7 @@ button:hover {
 
 button:active {
     scale: .9;
-} */
+}
 
 /* *********NEW ANIMATION********** */
 
@@ -646,6 +646,7 @@ pre::before{
 
     #TVID:hover {
         transform: translateX(-400px);
+        /* margin-bottom: 70%; */
     }
 
     #TVID {
@@ -664,6 +665,7 @@ pre::before{
             /* margin-bottom: 12vh; */
             padding-bottom: 10vh;
             display: flex;
+            justify-content: center;
             /* overflow: hidden; */
             position: relative;
             height: 350px;
@@ -683,7 +685,7 @@ pre::before{
             text-transform: capitalize;
             text-align: justify;
             position: absolute;
-            bottom: -18%;
+            bottom: -20%;
             border-radius: 2px;
             transition: all ease 1s;
             text-transform: capitalize;
@@ -692,8 +694,9 @@ pre::before{
     
         #SECM:hover #SEC1 {
             z-index: 1;
-            transform: translateX(90px);
+            transform: translateX(50px);
         }
+
 }
 
 @media (orientation: landscape) {
