@@ -644,8 +644,8 @@ pre::before{
         /* margin-left: 2%; */
     }
 
-    #TVIDS:hover #TVID {
-        transform: translateX(-250px);
+    #TVID:hover {
+        transform: translateX(-400px);
     }
 
     #TVID {
@@ -683,7 +683,7 @@ pre::before{
             text-transform: capitalize;
             text-align: justify;
             position: absolute;
-            bottom: -20%;
+            bottom: -18%;
             border-radius: 2px;
             transition: all ease 1s;
             text-transform: capitalize;
@@ -692,7 +692,7 @@ pre::before{
     
         #SECM:hover #SEC1 {
             z-index: 1;
-            transform: translateX(200px);
+            transform: translateX(90px);
         }
 }
 
