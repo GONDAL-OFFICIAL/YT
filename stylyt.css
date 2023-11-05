@@ -58,8 +58,31 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
+@keyframes LOGOX {
+    0% {
+        opacity: 1;
+        rotate: 0deg;
+    }
+
+    /* 20% {
+        rotate: 30deg;
+    } */
+
+    30% {
+        opacity: .8;
+    }
+
+    40% {
+        rotate: -30deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
 #LOGO:hover {
-    animation: LOGO 1s linear .2s infinite none;
+    animation: LOGOX 1s linear .2s infinite none;
 }
 
 #GOMH {

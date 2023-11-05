@@ -57,8 +57,31 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
+@keyframes LOGOX {
+    0% {
+        opacity: 1;
+        rotate: 0deg;
+    }
+
+    /* 20% {
+        rotate: 30deg;
+    } */
+
+    30% {
+        opacity: .8;
+    }
+
+    40% {
+        rotate: -30deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
 #LOGO:hover {
-    animation: LOGO 1s linear .2s infinite none;
+    animation: LOGOX 1s linear .2s infinite none;
 }
 
 #GOMH {
@@ -128,12 +151,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 #GOMH:hover {
-    animation: FUNNH1 .7s ease-in-out .2s infinite none;
+    animation: FUNNL2 1s ease-in-out .2s infinite none;
 }
 
-@keyframes FUNNH1 {
+@keyframes FUNNL2 {
     0% {
-        background-image: url(./red.JPG);
+        background-image: url(./RWBG.JPG);
     }
 
     100% {
